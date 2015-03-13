@@ -109,6 +109,16 @@
 //    [button5 addTarget:self action:@selector(one:) forControlEvents:UIControlEventTouchUpInside];
     [view1 addSubview:button5];
     
+    UIButton * button6 = [UIButton buttonWithType:UIButtonTypeSystem];
+    button6.frame = CGRectMake(65, 60, 50, 40);
+    [button6 setTitle:@"2" forState:UIControlStateNormal];
+    [button6 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    button6.backgroundColor = [UIColor whiteColor];
+    [button6 setShowsTouchWhenHighlighted:YES];
+    button6.layer.cornerRadius = 8;
+    //    [button6 addTarget:self action:@selector(one:) forControlEvents:UIControlEventTouchUpInside];
+    [view1 addSubview:button6];
+    
 }
 
 -(void)clean:(id)sender{
